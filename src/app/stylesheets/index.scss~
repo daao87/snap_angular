@@ -1,0 +1,132 @@
+@import '../../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/variables';
+@import 'color-fonts';
+
+body{
+	font-family: $gotham;
+	font-weight: 300;
+}
+
+header{
+	background-color:lighten($bgGray,50%);
+}
+.break{
+	clear: both;
+}
+
+.modal-footer {
+	padding: 15px;
+	text-align: right;
+	border: none;
+	margin-top: 55px;
+}
+
+.widget-bg-general{
+	height: 25em;
+	overflow-y: scroll;
+}
+
+.red{
+	@extend .widget-bg-general;
+	background-color: $bgRed;
+}
+
+.blue{
+	@extend .widget-bg-general;
+	background-color: $bgBlue;
+}
+
+.yellow{
+	@extend .widget-bg-general;
+	background-color: $bgYellow;
+}
+
+.green{
+	@extend .widget-bg-general;
+	background-color: $bgGreen;
+}
+
+.grey{
+	@extend .widget-bg-general;
+	background-color: $bgGray;
+}
+
+.widget-thumb {
+  max-height: 8em;
+}
+
+.modal-header {
+	background-color:lighten($bgGray,40%);
+	color:#FFF;
+}
+
+.btn-custom {
+	margin: 1%;
+	box-shadow: 1px 2px 0px 0px darken($brand-primary, 20%);
+}
+
+.widget {
+	margin: 10px;
+	color: #FFF;
+}
+
+.widget-inner {
+	padding: 10px 15px;
+}
+
+ul {
+	list-style:none;
+	color: $bgGray;
+	display: block;
+}
+
+ul li {
+	display: block;
+}
+
+ul li a {
+	float: left;
+	padding: 1%;
+}
+
+.img-circle {
+	max-width: 150px;
+	padding: 2%;
+}
+
+.img-circle.min {
+	max-width: 80px;
+	max-height: 80px;
+	padding: 2%;
+	display: block;
+	float: left;
+}
+
+input[type=checkbox] {
+	display:none;
+}
+
+input[type=checkbox] + label:hover {
+	color: darken($bgRed,20%);
+}
+
+input[type=checkbox] + label {
+	color: #FFF;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	padding: 0 0 0 0px;
+}
+
+.item{
+	&.w3{
+		width:25%;
+	}
+	&.w6{
+		width:50%;
+	}
+	&.w12{
+		width:100%;
+	}
+}
+
+
